@@ -5,15 +5,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="container mx-auto px-4 py-8">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
+    <div class="bg-zinc-800 text-white min-h-screen flex flex-col items-center">
+  <nav class="bg-zinc-700 w-full py-4">
+    <h2 class="text-3xl font-bold mb-4 dark:text-white">About Me</h2>
+    <ul class="flex space-x-4">
+      <li><a href=".\home_pg.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Home</a></li>
+      <li><a href=".\about.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">About</a></li>
+      <li><a href=".\education.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Education</a></li>
+      <li><a href=".\resume.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Experience</a></li>
+      <li><a href=".\portfolio.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Portfolio</a></li>
+      <li><a href=".\contact.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Contact</a></li>
+    </ul>
+  </nav>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-            <img class="rounded-lg shadow-lg w-full" src="https://placehold.co/400" alt="Profile Picture" crossorigin="anonymous">
+          <img src="Profile pic2.jpeg" alt="Profile Picture" class="rounded-full shadow-lg" height="250" width="350">
         </div>
         <div>
-            <p class="text-lg leading-relaxed mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="text-lg leading-relaxed">I am passionate about web development and always eager to learn new technologies. My goal is to create user-friendly and visually appealing websites that provide a great user experience.</p>
+            <p class="text-lg leading-relaxed mb-4 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="text-lg leading-relaxed dark:text-zinc-300">I am passionate about web development and always eager to learn new technologies. My goal is to create user-friendly and visually appealing websites that provide a great user experience.</p>
         </div>
     </div>
 </div>
