@@ -5,12 +5,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="bg-white dark:bg-zinc-800 min-h-screen p-4 sm:p-8 flex flex-col items-center justify-center">
+    <div class="bg-zinc-800 text-white min-h-screen flex flex-col items-center">
+      <nav class="bg-zinc-700 w-full py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-lg font-bold">Education</div>
+          <ul class="flex space-x-4">
+            <li><a href=".\home_pg.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Home</a></li>
+            <li><a href=".\about.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">About</a></li>
+            <li><a href=".\education.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Education</a></li>
+            <li><a href=".\resume.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Experience</a></li>
+            <li><a href=".\portfolio.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Portfolio</a></li>
+            <li><a href=".\contact.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     <h1 class="text-3xl font-bold text-center mb-4">My Education</h1>
-    <div class="max-w-lg w-full bg-zinc-100 dark:bg-zinc-700 rounded-lg p-4">
+    <div
+      class="max-w-lg w-full bg-zinc-100 dark:bg-zinc-700 rounded-lg p-4 flex flex-col sm:flex-row items-center sm:items-start"
+    >
+      <img
+        src="https://placehold.co/600x400"
+        alt="Picture of my school"
+        class="w-full sm:w-1/2 h-auto rounded-lg mb-4 sm:mb-0 sm:mr-4"
+      />
+      <div>
         <h2 class="text-xl font-semibold mb-2">School Name</h2>
-        <p class="text-sm text-zinc-600 dark:text-zinc-400">Description of the school and degree obtained.</p>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">
+          Description of the school and degree obtained.
+        </p>
+      </div>
     </div>
+  </div>
 </div>
   </body>
 </html>
