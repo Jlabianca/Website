@@ -5,25 +5,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="bg-blue-500 dark:bg-space-zinc-900 min-h-screen flex flex-col items-center justify-center">
-    <h1 class="text-3xl font-bold text-space-zinc-900 dark:text-space-zinc-200 mb-4">My Portfolio</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-        <div class="bg-space-zinc-100 dark:bg-space-zinc-700 rounded-lg shadow-md p-4">
-            <img src="https://placehold.co/300" alt="Project 1" class="w-full h-40 object-cover rounded mb-2" crossorigin="anonymous">
-            <h2 class="text-lg font-semibold text-space-zinc-900 dark:text-space-zinc-200">Project 1</h2>
-            <p class="text-sm text-space-zinc-600 dark:text-space-zinc-300">Description of Project 1</p>
+    <div class="min-h-screen flex flex-col">
+    <nav class="bg-zinc-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold">My Portfolio</div>
+            <ul class="flex space-x-4">
+              <li><a href=".\home_pg.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Home</a></li>
+              <li><a href=".\about.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">About</a></li>
+              <li><a href=".\education.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Education</a></li>
+              <li><a href=".\resume.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Experience</a></li>
+              <li><a href=".\portfolio.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Portfolio</a></li>
+              <li><a href=".\contact.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Contact</a></li>
+            </ul>
         </div>
-        <div class="bg-space-zinc-100 dark:bg-space-zinc-700 rounded-lg shadow-md p-4">
-            <img src="https://placehold.co/300" alt="Project 2" class="w-full h-40 object-cover rounded mb-2" crossorigin="anonymous">
-            <h2 class="text-lg font-semibold text-space-zinc-900 dark:text-space-zinc-200">Project 2</h2>
-            <p class="text-sm text-space-zinc-600 dark:text-space-zinc-300">Description of Project 2</p>
-        </div>
-        <div class="bg-space-zinc-100 dark:bg-space-zinc-700 rounded-lg shadow-md p-4">
-            <img src="https://placehold.co/300" alt="Project 3" class="w-full h-40 object-cover rounded mb-2" crossorigin="anonymous">
-            <h2 class="text-lg font-semibold text-space-zinc-900 dark:text-space-zinc-200">Project 3</h2>
-            <p class="text-sm text-space-zinc-600 dark:text-space-zinc-300">Description of Project 3</p>
-        </div>
+    </nav>
+    <div class="container mx-auto p-4 flex-grow">
+        <section id="portfolio" class="my-8">
+            <h2 class="text-3xl font-bold">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <div class="bg-white dark:bg-zinc-800 p-4 rounded-lg shadow">
+                    <img src="https://placehold.co/300x200" alt="Project 1" class="w-full h-40 object-cover rounded" crossorigin="anonymous">
+                    <h3 class="text-xl font-bold mt-2">Project 1</h3>
+                    <p class="mt-2">Description of project 1.</p>
+                </div>
+                <div class="bg-white dark:bg-zinc-800 p-4 rounded-lg shadow">
+                    <img src="https://placehold.co/300x200" alt="Project 2" class="w-full h-40 object-cover rounded" crossorigin="anonymous">
+                    <h3 class="text-xl font-bold mt-2">Project 2</h3>
+                    <p class="mt-2">Description of project 2.</p>
+                </div>
+                <div class="bg-white dark:bg-zinc-800 p-4 rounded-lg shadow">
+                    <img src="https://placehold.co/300x200" alt="Project 3" class="w-full h-40 object-cover rounded" crossorigin="anonymous">
+                    <h3 class="text-xl font-bold mt-2">Project 3</h3>
+                    <p class="mt-2">Description of project 3.</p>
+                </div>
+            </div>
+        </section>
     </div>
+    <footer class="bg-zinc-800 text-white p-4 text-center">
+        <p>© 2023 My Portfolio. All rights reserved.</p>
+    </footer>
 </div>
   </body>
 </html>
