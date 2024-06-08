@@ -8,8 +8,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open home_pg.html",
-            "file": "/Users/josephlabianca/Desktop/VS Code/Website/home_pg.html"
+            "name": "Open index.html",
+            "file": "/Users/josephlabianca/Desktop/VS Code/Website/index.html"
         }
     ]
 }
