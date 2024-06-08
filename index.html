@@ -1,73 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    img, video {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .container {
-      padding-top: 10px;
-    }
-
-    /* Additional custom styles if needed */
-  </style>
-</head>
-<body>
-  <div class="bg-zinc-800 text-white min-h-screen flex flex-col items-center">
-    <nav class="bg-zinc-700 w-full py-4">
-      <div class="container mx-auto d-flex justify-content-between align-items-center">
-        <div class="text-lg font-bold">My Personal Website</div>
-        <ul class="d-flex space-x-4">
-          <li><a href="./index.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Home</a></li>
-          <li><a href="./about.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">About</a></li>
-          <li><a href="./education.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Education</a></li>
-          <li><a href="./certification.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Certifications</a></li>
-          <li><a href="./resume.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Experience</a></li>
-          <li><a href="./portfolio.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Portfolio</a></li>
-          <li><a href="./contact.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container mx-auto d-flex flex-column flex-md-row align-items-center py-12">
-      <div class="col-md-6 d-flex justify-content-center justify-content-md-start">
-        <img src="Profile pic2.jpeg" alt="Profile Picture" class="rounded-full shadow-lg" height="250" width="350">
-      </div>
-      <div class="col-md-6 text-center text-md-left mt-8 mt-md-0">
-        <h1 class="text-4xl font-bold">Joseph LaBianca</h1>
-        <p class="mt-4">
-          My name is Joseph LaBianca. I am 25 years old and from Syosset, NY. 
-          I am certified in Google Professional Data Analyst with a passion for coding and system optimization. 
-          Proficient in Python, R, SQL, and Tableau, with a demonstrated ability to leverage data-driven insights 
-          for business improvement. Eager to expand skills and knowledge in data analytics.
-        </p>
-        <a href="./contact.html" class="mt-6 bg-blue-500 text-white py-2 px-4 rounded-full d-inline-block">Contact Me</a>
-      </div>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-zinc-800 text-white min-h-screen flex flex-col items-center">
+  <nav class="bg-zinc-700 w-full py-4">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+      <div class="text-lg font-bold">My Personal Website</div>
+      <button
+        id="menu-toggle"
+        class="sm:hidden text-blue-400 dark:text-blue-600 focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+      <ul id="nav-links" class="hidden sm:flex space-x-4">
+        <li><a href=".\index.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Home</a></li>
+        <li><a href=".\about.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">About</a></li>
+        <li><a href=".\education.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Education</a></li>
+        <li><a href=".\certification.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Certifications</a></li>
+        <li><a href=".\resume.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Experience</a></li>
+        <li><a href=".\portfolio.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Portfolio</a></li>
+        <li><a href=".\contact.html" class="text-zinc-900 dark:text-zinc-100 hover:text-blue-600">Contact</a></li>
+      </ul>
     </div>
-    <div class="fixed bottom-4 right-4 d-flex flex-column space-y-2">
-      <a href="https://www.facebook.com/profile.php?id=100006371323581" class="bg-zinc-700 p-2 rounded-full">
-        <img src="facebook_logo.png" alt="Facebook" height="25" width="25" />
-      </a>
-      <a href="https://www.linkedin.com/in/joseph-labianca-37237519a" class="bg-zinc-700 p-2 rounded-full">
-        <img src="linkedin_logo.jpeg" alt="LinkedIn" height="25" width="25" />
-      </a>
-      <a href="https://github.com/Jlabianca" class="bg-zinc-700 p-2 rounded-full">
-        <img src="github_pic.jpeg" alt="GitHub" height="25" width="25" />
-      </a>
+  </nav>
+  <div class="container mx-auto flex flex-col md:flex-row items-center py-12">
+    <div class="md:w-1/2 flex justify-center md:justify-start">
+      <img src="Profile pic2.jpeg" alt="Profile Picture" class="rounded-full shadow-lg" height="250" width="350">
+    </div>
+    <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+      <h1 class="text-4xl font-bold">Joseph LaBianca</h1>
+      <p class="mt-4">My name is Joseph LaBianca. I am 25 years old and from Syosset, NY. 
+        I am certified in Google Professional Data Analyst with a passion for coding and system optimization. 
+        Proficient in Python, R, SQL, and Tableau, with a demonstrated ability to leverage data-driven insights 
+        for business improvement. Eager to expand skills and knowledge in data analytics. </p>
+      <button href=".\contact.html" class="mt-6 bg-blue-500 text-white py-2 px-4 rounded-full">Contact Me</button>
     </div>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  <div class="fixed bottom-4 right-4 flex flex-col space-y-2">
+    <a href="https://www.facebook.com/profile.php?id=100006371323581" class="bg-zinc-700 p-2 rounded-full">
+      <img src="facebook_logo.png" alt="Facebook" height="25" width="25" />
+    </a>
+    <a href="https://www.linkedin.com/in/joseph-labianca-37237519a" class="bg-zinc-700 p-2 rounded-full">
+      <img src="linkedin_logo.jpeg" alt="LinkedIn" height="25" width="25" />
+    </a>
+    <a href="https://github.com/Jlabianca" class="bg-zinc-700 p-2 rounded-full">
+      <img src="github_pic.jpeg" alt="GitHub" height ="25" width="25" />
+    </a>
+  </div>
+</div>
+  </body>
 </html>
