@@ -50,9 +50,14 @@
           I am certified in Google Professional Data Analyst with a passion for coding and system optimization. 
           Proficient in Python, R, SQL, and Tableau, with a demonstrated ability to leverage data-driven insights 
           for business improvement. Eager to expand skills and knowledge in data analytics. </p>
-        <a href="./contact.html" class="mt-6 bg-blue-500 text-white py-2 px-4 rounded-full">Contact Me</a>
+          <button id="contactButton" class="mt-6 bg-blue-500 dark:bg-blue-500 text-white dark:text-white py-2 px-4 rounded-full">Contact Me</button>
+          <script>
+              document.getElementById('contactButton').addEventListener('click', function() {
+              window.location.href = 'contact.html';
+            });
+          </script>
+          </div>
       </div>
-    </div>
     <div class="fixed bottom-4 right-4 flex flex-col space-y-2">
       <a href="https://www.facebook.com/profile.php?id=100006371323581" class="bg-zinc-700 p-2 rounded-full">
         <img src="facebook_logo.png" alt="Facebook" height="25" width="25" />
